@@ -1,10 +1,10 @@
-import type { Context } from 'koa'
-import { demoService } from '../services'
+import type { Context } from 'koa';
+import { demoService } from '../services';
 
 class DemoController {
   async getHelloWord(ctx: Context) {
-    ctx.body = demoService.getHello()
+    ctx.body = demoService.getHello();
   }
 }
 
-export const demoController = new DemoController()
+export const demoController = new DemoController();

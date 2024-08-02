@@ -1,8 +1,8 @@
-import Router from 'koa-router'
-import { demoRouter } from './demo'
+import Router from 'koa-router';
+import { demoRouter } from './demo';
 
-const routers = new Router()
+const routers = new Router();
 
-routers.use('/demo', demoRouter.routes(), demoRouter.allowedMethods())
+routers.use('/demo', demoRouter.routes(), demoRouter.allowedMethods());
 
-export default routers
+export default routers;

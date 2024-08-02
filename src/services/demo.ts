@@ -1,7 +1,7 @@
 export class DemoService {
   getHello(): string {
-    return 'hello Avan!'
+    return 'hello Avan!';
   }
 }
 
-export const demoService = new DemoService()
+export const demoService = new DemoService();

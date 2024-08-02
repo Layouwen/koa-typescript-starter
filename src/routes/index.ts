@@ -1,8 +1,8 @@
 import Router from 'koa-router';
-import { demoRouter } from './demo';
+import { apiRouter } from './api';
 
 const routers = new Router();
 
-routers.use('/demo', demoRouter.routes(), demoRouter.allowedMethods());
+routers.use('/api', apiRouter.routes(), apiRouter.allowedMethods());
 
 export default routers;

@@ -14,10 +14,30 @@ pnpm i
 pnpm dev
 ```
 
-### Build
+### Build Js
 
 ```bash
 pnpm build
+```
+
+### Build Pkg
+
+```bash
+pnpm build:pkg
+```
+
+### Build Docker Image
+
+```bash
+pnpm build:docker
+```
+
+### Test
+
+```bash
+pnpm test
+# watch
+pnpm test:watch
 ```
 
 ## Features
@@ -27,9 +47,9 @@ pnpm build
 - [x] **Prettier**
 - [x] **Husky**
 - [x] **Lint**
-- [ ] **Jest**
+- [x] **Jest**
 - [ ] **Logger**
-- [ ] **Pkg**
+- [x] **Pkg**
 - [ ] **Mqtt**
 - [ ] **Socket.io**
 - [ ] **Redis**

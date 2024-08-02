@@ -1,8 +1,18 @@
 import Koa from 'koa';
 import { bodyParser } from '@koa/bodyparser';
 import cors from '@koa/cors';
+import pkg from '../package.json';
 import routers from './routes';
 import { logger } from './utils';
+import config from './config';
+
+function getServerStartInfo(params: { port: string | number; version: string }): string {
+  return `------------------------------------
+serverName: ${pkg.name}
+version: ${params.version}
+port: ${params.port}
+------------------------------------`;
+}
 
 const app = new Koa();
 
@@ -10,6 +20,6 @@ app.use(cors());
 app.use(bodyParser());
 app.use(routers.routes());
 
-app.listen(3000, () => {
-  logger.info('server is running on port 3000');
+app.listen(config.port, () => {
+  logger.info(getServerStartInfo({ port: config.port, version: pkg.version }));
 });

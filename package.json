@@ -7,6 +7,7 @@
     "email": "layouwen@gmail.com"
   },
   "license": "ISC",
+  "repository": "https://github.com/Layouwen/koa-typescript-starter",
   "keywords": [
     "koa",
     "typescript",

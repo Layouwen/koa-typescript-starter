@@ -1,0 +1,55 @@
+{
+  "name": "koa-typescript-starter",
+  "version": "0.0.1",
+  "description": "An efficient and ready-to-use boilerplate for building applications with Koa.js and TypeScript.",
+  "author": {
+    "name": "Avan",
+    "email": "layouwen@gmail.com"
+  },
+  "license": "ISC",
+  "keywords": [
+    "koa",
+    "typescript",
+    "prettier",
+    "eslint",
+    "mqtt",
+    "socket.io",
+    "webservice",
+    "logger"
+  ],
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "nodemon src/main.ts",
+    "build": "tsc",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@koa/bodyparser": "^5.1.1",
+    "@koa/cors": "^5.0.0",
+    "@types/koa__cors": "^5.0.0",
+    "D": "^1.0.0",
+    "koa": "^2.15.3",
+    "koa-router": "^12.0.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.24.1",
+    "@types/koa": "^2.15.0",
+    "@types/koa-router": "^7.4.8",
+    "eslint": "9.5.0",
+    "husky": "^9.1.4",
+    "lint-staged": "^15.2.7",
+    "nodemon": "^3.1.4",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4"
+  },
+  "volta": {
+    "node": "20.14.0",
+    "npm": "10.7.0",
+    "pnpm": "9.6.0"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}

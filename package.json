@@ -34,7 +34,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@avanlan/logger": "^0.0.1",
+    "@avanlan/logger": "^0.0.2",
     "@koa/bodyparser": "^5.1.1",
     "@koa/cors": "^5.0.0",
     "axios": "0.27.2",

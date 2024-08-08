@@ -48,7 +48,7 @@ pnpm test:watch
 - [x] **Husky**
 - [x] **Lint**
 - [x] **Jest**
-- [ ] **Logger**
+- [x] **Logger**
 - [x] **Pkg**
 - [ ] **Mqtt**
 - [ ] **Socket.io**

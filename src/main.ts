@@ -3,8 +3,8 @@ import { bodyParser } from '@koa/bodyparser';
 import cors from '@koa/cors';
 import pkg from '../package.json';
 import routers from './routes';
-import { logger } from './utils';
 import config from './config';
+import { logger } from './utils';
 
 function getServerStartInfo(params: { port: string | number; version: string }): string {
   return `------------------------------------
@@ -21,5 +21,5 @@ app.use(bodyParser());
 app.use(routers.routes());
 
 app.listen(config.port, () => {
-  logger.info(getServerStartInfo({ port: config.port, version: pkg.version }));
+  logger.daily.info(getServerStartInfo({ port: config.port, version: pkg.version }));
 });

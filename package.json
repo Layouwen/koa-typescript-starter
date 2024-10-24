@@ -39,7 +39,8 @@
     "@koa/cors": "^5.0.0",
     "axios": "0.27.2",
     "koa": "^2.15.3",
-    "koa-router": "^12.0.1"
+    "koa-router": "^12.0.1",
+    "mqtt": "^5.10.1"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.24.1",
@@ -50,6 +51,7 @@
     "@types/koa": "^2.15.0",
     "@types/koa-router": "^7.4.8",
     "@types/koa__cors": "^5.0.0",
+    "@types/mqtt": "^2.5.0",
     "babel-jest": "^29.7.0",
     "dotenv": "^16.4.5",
     "eslint": "9.5.0",

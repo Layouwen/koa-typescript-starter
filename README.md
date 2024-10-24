@@ -50,6 +50,6 @@ pnpm test:watch
 - [x] **Jest**
 - [x] **Logger**
 - [x] **Pkg**
-- [ ] **Mqtt**
+- [x] **Mqtt**
 - [ ] **Socket.io**
 - [ ] **Redis**

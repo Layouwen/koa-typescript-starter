@@ -1,6 +1,6 @@
 {
   "name": "koa-typescript-starter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An efficient and ready-to-use boilerplate for building applications with Koa.js and TypeScript.",
   "author": {
     "name": "Avan",

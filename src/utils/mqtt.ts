@@ -17,6 +17,10 @@ export const mqttTopicInfoList = [
 ] as MqttTopicInfo[];
 
 export async function mqttInit() {
+  if (!config.mqtt.enable) {
+    return;
+  }
+
   const mqttClient = new MqttClient({
     brokerUrl: config.mqtt.url,
     opts: config.mqtt.opts,

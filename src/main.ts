@@ -1,6 +1,7 @@
 import Koa from 'koa';
 import { bodyParser } from '@koa/bodyparser';
 import cors from '@koa/cors';
+import figlet from 'figlet';
 import pkg from '../package.json';
 import routers from './routes';
 import config from './config';
@@ -9,14 +10,14 @@ import { httpLogger } from './middlewares';
 
 function getServerStartInfo(params: {
   port: string | number;
-  version: string;
 }): string {
   return `系统信息
-------------------------------------
+------------------------------------------------
+${figlet.textSync('WELCOME')}
 serverName: ${pkg.name}
-version: ${params.version}
+version: ${pkg.version}
 port: ${params.port}
-------------------------------------`;
+------------------------------------------------`;
 }
 
 async function main() {
@@ -31,7 +32,7 @@ async function main() {
 
   app.listen(config.port, () => {
     logger.daily.info(
-      getServerStartInfo({ port: config.port, version: pkg.version }),
+      getServerStartInfo({ port: config.port }),
     );
   });
 }

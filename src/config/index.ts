@@ -7,6 +7,7 @@ dotenv.config();
 export default {
   port: process.env.PORT || '5834',
   mqtt: {
+    enable: process.env.MQTT_ENABLE === 'true',
     url: process.env.MQTT_URL || 'ws://localhost:1883',
     opts: {
       protocolVersion: 5 as const,

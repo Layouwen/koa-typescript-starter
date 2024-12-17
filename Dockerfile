@@ -4,4 +4,4 @@ WORKDIR /app
 COPY pkg /app/pkg
 COPY package.json /app
 
-ENTRYPOINT ["/app/pkg/koa-typescript-starter"]
+ENTRYPOINT ["/app/pkg/koa-typescript-starter-alpine"]

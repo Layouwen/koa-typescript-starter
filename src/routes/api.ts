@@ -5,4 +5,4 @@ import { demoRouter } from './demo';
 export const apiRouter = new Router();
 
 apiRouter.use('/demo', demoRouter.routes(), demoRouter.allowedMethods());
-apiRouter.get('/version', systemController.getVersion.bind(systemController));
+apiRouter.get('/version', systemController.getApplicationInfo.bind(systemController));

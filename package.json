@@ -1,6 +1,6 @@
 {
   "name": "koa-typescript-starter",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "An efficient and ready-to-use boilerplate for building applications with Koa.js and TypeScript.",
   "author": {
     "name": "Avan",
@@ -34,10 +34,10 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@avanlan/logger": "^0.0.9",
+    "@avanlan/logger": "^0.1.5",
     "@koa/bodyparser": "^5.1.1",
     "@koa/cors": "^5.0.0",
-    "axios": "0.27.2",
+    "axios": "^1.7.9",
     "dotenv": "^16.4.7",
     "figlet": "^1.8.0",
     "koa": "^2.15.3",
@@ -69,7 +69,8 @@
   "pkg": {
     "scripts": [],
     "assets": [
-      "node_modules/figlet/fonts/**/*"
+      "node_modules/figlet/fonts/**/*",
+      "node_modules/axios"
     ],
     "targets": [
       "latest-alpine-x64",
